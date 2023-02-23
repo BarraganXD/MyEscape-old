@@ -23,24 +23,21 @@
         </header>
 
         <nav>
-            <div><a href="#">Reserva</a></div>
+            <div><a href="#formPadre">Reserva</a></div>
             <div><a href="#">Preguntas frecuentes</a></div>
             <div><a href="#">Contacto</a></div>
         </nav>
 
         <main>
             <div id="keywords">
-                <div class="grid">
-                    <h2 class="stroke">INFANTIL</p>
-                    <h2 class="stroke">A DOMICILIO</p>
-                    <h2 class="stroke">PERSONALIZADO</p>
-                    <h2 class="stroke halftone halftone-color">ORIGINAL</p>
-                  </div>
+                    <h2 class="stroke">A DOMICILIO A LA PROVINCIA DE <span>ALICANTE</span></h2>
+                    <div class="separador"></div>
+                    <h2 class="stroke">EN NUESTRO LOCAL SITUADO EN <span>ELCHE</span></h2>
             </div>
 
             <div class="extraInfo">
-                <p>Cumpleaños y comuniones</p>
-                <p>Una forma original de esconder su regalo</p>
+                <p>Para niños</p>
+                <p>Temática personalizada</p>
             </div>
 
 
@@ -58,8 +55,8 @@
                 </div>
             </div>
             
-            <div class="formPadre">
-                <div class="form">
+            <div id="formPadre">
+                <form action="mailto:myescapeadomicilio@gmail.com" method="post" enctype="text/plain">
                     <div class="formTitulo">Contáctanos</div>
                     <div class="formSubtitulo">y confirmaremos tu reserva</div>
                     <div class="formInput I1">
@@ -87,8 +84,8 @@
                         <div class="cut cut-short"></div>
                         <label for="tematica" class="placeholder">Temática</label>
                       </div>
-                    <button type="text" class="submit">Enviar</button>
-                  </div>
+                    <input type="submit" class="submit" value="Abrir cliente de correo"/>
+                </form>
             </div>
         
             
