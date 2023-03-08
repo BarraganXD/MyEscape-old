@@ -46,17 +46,17 @@ nav a {
 /*------------------KEYWORDS------------------*/
 
 #keywords {
-  background-color: #ffffff; /*#fef3c7*/
-  display: grid;
+  background-color: #fef3c7; /*#fef3c7*/
+  /*display: grid;
   align-items: center;
   grid-gap: 2vw;
-  grid-template-columns: 1fr 3px 1fr;
+  grid-template-columns: 1fr 3px 1fr;*/
 }
 
-.separador {
+/*.separador {
   height: 90%;
   background-color: black;
-}
+}*/
 
 #keywords h2 {
   font-size: 6vw;
@@ -66,30 +66,30 @@ nav a {
 }
 
 #keywords .cuadrado {
+  padding: 20px 0;
   height: 100%;
-  display: flex;
   text-align: center;
-  align-items: center;
-  justify-content: center;
 }
 
 #keywords .cuadrado span{
   text-decoration: underline;
 }
 
+/*
 #c1 {
   background-color: #f99494;
-}
+}*/
 
+/*
 #c2 {
   background-color: #2980b9;
-}
+}*/
 
 
 /*------------------INFO EXTRA------------------*/
 
 .extraInfo {
-  margin: 90px 0;
+  margin: 80px 0 90px 0;
   background-color: #ffffff;
   text-align: center;
   font-weight: bold;
@@ -264,7 +264,9 @@ nav a {
 
   .prueba {
     margin: 15vw 0;
+    border: 10px solid #ffd52b;
   }
+
 
   .pruebaTitulo {
     display: flex;
@@ -309,4 +311,40 @@ nav a {
 
   .contacto p {
     font-size: 4vw;
+  }
+
+
+  /*------------------PREGUNTAS FRECUENTES------------------*/
+
+  #faqFlex {
+    display: flex;
+    padding: 0 5vw;
+  }
+
+  #faqSelector {
+    border: 2px solid black;
+    border-width: 2px 0 2px 2px;
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .pregunta {
+    background-color: #c9c9c9;
+    border: 2px solid black;
+    border-width: 0 0 2px 0;
+    padding: 5px;
+  }
+
+  #faq {
+    height: 250px;
+    width: 70vw;
+    padding: 2px;
+    background: black;
+  }
+  
+  #content {
+    height: 250px;
+    overflow: auto;
+    background: #fff;
   }
