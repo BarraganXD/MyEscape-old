@@ -66,7 +66,7 @@ nav a {
 }
 
 #keywords .cuadrado {
-  padding: 20px 0;
+  padding: 7vw 0;
   height: 100%;
   text-align: center;
 }
@@ -75,34 +75,48 @@ nav a {
   text-decoration: underline;
 }
 
-/*
-#c1 {
-  background-color: #f99494;
-}*/
-
-/*
-#c2 {
-  background-color: #2980b9;
-}*/
-
 
 /*------------------INFO EXTRA------------------*/
 
 .extraInfo {
-  margin: 80px 0 90px 0;
-  background-color: #ffffff;
-  text-align: center;
-  font-weight: bold;
-  color: black;
+  margin: 15vw 0 17vw 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .extraInfo h3 {
-  margin: 20px 0;
+  width: 90vw;
+  margin: 0 5vw;
+
   font-family: 'Rampart One';
   font-size: 8vw;
-  line-height: 10vw;
   letter-spacing: 1vw;
+
+  text-align: center;
+  border: 10px solid transparent;
+  margin: 20px 0;
+
+  background-image:
+  linear-gradient(white, white),
+  linear-gradient(180deg, #6978d7, #ff8838 50%, #6978d7);
+  /*(180deg, cornflowerblue, #ff8838 50%, cornflowerblue)*/
+  /*#606dbc #465298*/
+
+  background-repeat: no-repeat;
+  background-size: 100% 100%, 100% 200%;
+  background-position: 0 0, 0 100%;
+  background-origin: padding-box, border-box;
+  animation: KF 1s infinite alternate;
 }
+
+@keyframes KF {
+  100% {
+    background-position: 0 0, 0 0;
+  }
+}
+
 
 /*------------------OFERTA------------------*/
 
@@ -221,19 +235,12 @@ nav a {
 }
 
 .textoOferta .p2 {
-  position:relative;
-  text-decoration:none;
-}
-.textoOferta .p2::before {
-  content: "";
-  position: absolute;
-  top: 45%; left: 0; width: 100%; height: 5px; 
-  background:red;
-  transform:rotate(-7deg);
+  font-size: 7vw;
 }
 
-.textoOferta .valido {
-  font-size: 3vw;
+.textoOferta .p2-2 {
+  font-size: 7vw;
+  text-decoration: underline 5px #3498db;
 }
 
 .asteriscoPrecios {
@@ -260,91 +267,172 @@ nav a {
  }
 
 
+ /*------------------PARTYGIF------------------*/
+
+ .partydiv {
+  display: flex;
+  justify-content: center;
+ }
+
+ .partygif {
+  width: 90vw;
+
+ }
+
+
  /*------------------CONTACTA------------------*/
 
-  .prueba {
-    margin: 15vw 0;
-    border: 10px solid #ffd52b;
+  #reservaBlock {
+    margin: 20vw 5vw;
+    background-color: #ffd52b;
+    border: 10px solid #1b1d21;
   }
 
 
-  .pruebaTitulo {
+  .reservaTitulo {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 
-  .prueba1{
-    -webkit-text-stroke: 2px black;
+  .reservaT1 {
+    -webkit-text-stroke: 2px rgb(0, 0, 0);
     font-size: 10vw;
     font-weight: bold;
-    color: white;
+    color: red;
   }
   
-  .raya {
+  .reservaRaya {
     height: 2px;
-    width: 90vw;
+    width: 83vw;
     background-color: black;
+    margin: 3px 0;
   }
 
-  .prueba2 {
-    font-size: 3.7vw;
+  .reservaT2 {
+    font-size: 3.5vw;
     font-weight: bold;
   }
 
-  .contacto {
-    margin: 5vw 5vw;
+  #reservaBoton {
+    margin: 5vw 15vw;
+    padding: 2vw;
+    border-radius: 10vw;
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 10px;
+    background-color: #34B7F1; /*#64acdc*/
+    text-decoration: none;
+    color: black;
   }
 
-  .contacto img {
+  #reservaBoton img {
     width: 7vw;
   }
 
-  .contacto a {
-    color: black;
-    text-decoration: none;
-  }
-
-  .contacto p {
+  #reservaBoton p {
     font-size: 4vw;
   }
 
 
   /*------------------PREGUNTAS FRECUENTES------------------*/
 
-  #faqFlex {
+  #preguntaPadre {
+    margin: 20vw 5vw;
     display: flex;
-    padding: 0 5vw;
-  }
-
-  #faqSelector {
-    border: 2px solid black;
-    border-width: 2px 0 2px 2px;
-    width: 20vw;
-    display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
   }
 
   .pregunta {
-    background-color: #c9c9c9;
-    border: 2px solid black;
-    border-width: 0 0 2px 0;
-    padding: 5px;
+    background: white;
+    border: 1px solid #ccc;
+    margin-bottom: 10vw;
   }
 
-  #faq {
-    height: 250px;
-    width: 70vw;
-    padding: 2px;
-    background: black;
+  .pregunta > h2 {
+    padding: 1rem;
+    margin: 0 0 0.5rem 0;
+  }
+  .pregunta > p {
+    padding: 0 1rem;
   }
   
-  #content {
-    height: 250px;
-    overflow: auto;
-    background: #fff;
+  .toRight h2 {
+    color: white;
+    background: repeating-linear-gradient(
+        135deg, 
+        #606dbc, 
+        #606dbc 10px, 
+        #465298 10px, 
+        #465298 20px);
   }
+
+  .toLeft h2 {
+    color: white;
+    background: repeating-linear-gradient(
+        45deg, 
+        #606dbc, 
+        #606dbc 10px, 
+        #465298 10px, 
+        #465298 20px);
+  }
+
+
+  /*------------------VOLVER A RESERVA------------------*/
+
+  #volver {
+    background: repeating-linear-gradient(
+        90deg, 
+        #cfa500, 
+        #cfa500 10px, 
+        #a08000 10px, 
+        #a08000 20px);
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    margin: -10vw 5vw 20vw 5vw;
+    padding: 3vw 0;
+    gap: 5vw;
+    justify-content: center;
+  }
+
+  #volver img {
+    width: 40px;
+  }
+
+  #volver a {
+    color: black;
+    text-decoration: none;
+    font-size: 5vw;
+    font-weight: bold;
+  }
+
+
+
+    /*------------------FOOT------------------*/
+
+    #foot {
+      background-color: #1b1d21;
+      width: 100%;
+    }
+
+    .footItem {
+      padding: 3vw 5vw;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .footItem a {
+      text-decoration: none;
+      color: white;
+    }
+
+    .footItem img {
+      width: 40px;
+    }
+
