@@ -81,7 +81,7 @@ nav a {
 }
 
 .extraInfo h3 {
-  width: 90vw;
+  width: 85vw;
   margin: 0 5vw;
 
   font-family: 'Rampart One';
@@ -90,7 +90,7 @@ nav a {
 
   text-align: center;
   border: 2.5vw solid transparent;
-  margin: 5.1vw 0;
+  margin: 5vw 0;
 
   background-image:
   linear-gradient(white, white),
