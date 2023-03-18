@@ -1,13 +1,14 @@
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 html,
 body {
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vw;
+  scroll-behavior: smooth;
 }
 
 header {
@@ -17,7 +18,7 @@ header {
 }
 
 header img {
-  height: 40vh;
+  max-height: 40vh;
   max-width: 100vw;
 }
 
@@ -25,7 +26,7 @@ nav {
   display: flex;
   background-color: #1b1d21;
   justify-content: space-around;
-  padding: 10px 0;
+  padding: 2.7vw 0;
 }
 
 nav div {
@@ -47,21 +48,12 @@ nav a {
 
 #keywords {
   background-color: #fef3c7; /*#fef3c7*/
-  /*display: grid;
-  align-items: center;
-  grid-gap: 2vw;
-  grid-template-columns: 1fr 3px 1fr;*/
 }
-
-/*.separador {
-  height: 90%;
-  background-color: black;
-}*/
 
 #keywords h2 {
   font-size: 6vw;
   font-weight: normal;
-  letter-spacing: 5px;
+  letter-spacing: 1.3vw;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -69,6 +61,8 @@ nav a {
   padding: 7vw 0;
   height: 100%;
   text-align: center;
+  width: 95vw;
+  margin: 0 auto;
 }
 
 #keywords .cuadrado span{
@@ -95,8 +89,8 @@ nav a {
   letter-spacing: 1vw;
 
   text-align: center;
-  border: 10px solid transparent;
-  margin: 20px 0;
+  border: 2.5vw solid transparent;
+  margin: 5.1vw 0;
 
   background-image:
   linear-gradient(white, white),
@@ -130,13 +124,13 @@ nav a {
   position: relative;
   width: 90vw;
   background: #fff;
-  box-shadow: 0 0 15px
+  box-shadow: 0 0 3.846vw
 }
 
 /* common */
 .ribbon {
-  width: 150px;
-  height: 150px;
+  width: 38.462vw;
+  height: 38.462vw;
   overflow: hidden;
   position: absolute;
 }
@@ -147,27 +141,27 @@ nav a {
   z-index: -1;
   content: "";
   display: block;
-  border: 5px solid #2980b9;
+  border: 1.282vw solid #2980b9;
 }
 
 .ribbon span {
   position: absolute;
   display: block;
-  width: 225px;
-  padding: 15px 0;
+  width: 57.692vw;
+  padding: 3.846vw 0;
   background-color: #3498db;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1.282vw 2.564vw rgba(0, 0, 0, 0.1);
   color: #fff;
-  font: 700 18px/1 "Lato", sans-serif;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  font: 700 4.5vw "Lato", sans-serif;
+  text-shadow: 0 0.256vw 0.256vw rgba(0, 0, 0, 0.2);
   text-transform: uppercase;
   text-align: center;
 }
 
 /* top left*/
 .ribbon-top-left {
-  top: -10px;
-  left: -10px;
+  top: -2.564vw;
+  left: -2.564vw;
 }
 
 .ribbon-top-left::before,
@@ -187,15 +181,15 @@ nav a {
 }
 
 .ribbon-top-left span {
-  right: -25px;
-  top: 30px;
+  right: -6.410vw;
+  top: 7.692vw;
   transform: rotate(-45deg);
 }
 
 /* top right*/
 .ribbon-top-right {
-  top: -10px;
-  right: -10px;
+  top: -2.564vw;
+  right: -2.564vw;
 }
 
 .ribbon-top-right::before,
@@ -215,13 +209,13 @@ nav a {
 }
 
 .ribbon-top-right span {
-  left: -25px;
-  top: 30px;
+  left: -6.410vw;
+  top: 7.692vw;
   transform: rotate(45deg);
 }
 
 .textoOferta {
-  margin: 60px 0 30px 0;
+  margin: 15.385vw 0 7.692vw 0;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -257,7 +251,7 @@ nav a {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  margin: 20px 0 20px 0;
+  margin: 5.128vw 0 5.128vw 0;
  }
 
  .box2 p{
@@ -283,9 +277,9 @@ nav a {
  /*------------------CONTACTA------------------*/
 
   #reservaBlock {
-    margin: 20vw 5vw;
+    margin: 20vw 5vw 0vw 5vw;
     background-color: #ffd52b;
-    border: 10px solid #1b1d21;
+    border: 2.5vw solid #1b1d21;
   }
 
 
@@ -297,17 +291,17 @@ nav a {
   }
 
   .reservaT1 {
-    -webkit-text-stroke: 2px rgb(0, 0, 0);
+    -webkit-text-stroke: 0.5vw rgb(0, 0, 0);
     font-size: 10vw;
     font-weight: bold;
     color: red;
   }
   
   .reservaRaya {
-    height: 2px;
+    height: 0.5vw;
     width: 83vw;
     background-color: black;
-    margin: 3px 0;
+    margin: 0.8vw 0;
   }
 
   .reservaT2 {
@@ -336,49 +330,75 @@ nav a {
     font-size: 4vw;
   }
 
+  #empresas {
+    --mask: conic-gradient(from -45deg at bottom,#0000,#000 1deg 89deg,#0000 90deg) 50%/8.00vw 100%;
+    -webkit-mask: var(--mask);
+    mask: var(--mask);
+    background-color: #ffd52bbc;
+    margin: 0 auto;
+    margin-bottom: 20vw;
+    width: 90vw;
+  }
+
+  #empresas div {
+    padding: 2vw 0 4vw 0;
+    font-size: 4vw;
+    text-align: center;
+  }
+
+  .empresasEsp {
+    margin: 5vw 0;
+  }
+
 
   /*------------------PREGUNTAS FRECUENTES------------------*/
 
-  #preguntaPadre {
-    margin: 20vw 5vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+  #faq {
+    margin: 20vw auto 0 auto;
+    text-align: center;
+    font-size: 3.8vw;
+    background-color: #4ec9bf;
+    width: 90vw;
+    border: dashed 0.78vw #2b2b2b;
+    border-bottom: solid 0.78vw #000000;
+    padding: 2vw 0;
   }
 
-  .pregunta {
-    background: white;
-    border: 1px solid #ccc;
-    margin-bottom: 10vw;
+  #chat {
+    margin: 0 auto 20vw auto;
+    border: 0.25vw solid #ccc;
+
+    border: dashed 0.78vw #2b2b2b;
+    border-top: none;
+
+    background-color: white;
+    border-radius: 0 0 3vw 3vw;
+    width: 90vw;
+    /*box-shadow: 0 0 10px 1px #0bafa1;*/
   }
 
-  .pregunta > h2 {
-    padding: 1rem;
-    margin: 0 0 0.5rem 0;
+  .mensaje {
+    display: inline-block;
+    font-size: 4vw;
+    border-radius: 5vw;
   }
-  .pregunta > p {
-    padding: 0 1rem;
-  }
-  
-  .toRight h2 {
+
+  .m-left {
+    background-color: #008484;
+    margin: 5vw 15vw 5vw 5vw;
+    border-bottom-left-radius: 0;
     color: white;
-    background: repeating-linear-gradient(
-        135deg, 
-        #606dbc, 
-        #606dbc 10px, 
-        #465298 10px, 
-        #465298 20px);
   }
 
-  .toLeft h2 {
+  .m-right {
+    background-color: #1a8400; /*#00ac0c*/
+    margin: 5vw 5vw 5vw 15vw;
+    border-bottom-right-radius: 0;
     color: white;
-    background: repeating-linear-gradient(
-        45deg, 
-        #606dbc, 
-        #606dbc 10px, 
-        #465298 10px, 
-        #465298 20px);
+  }
+
+  .mensaje p {
+    padding: 3vw 5vw;
   }
 
 
@@ -388,20 +408,20 @@ nav a {
     background: repeating-linear-gradient(
         90deg, 
         #cfa500, 
-        #cfa500 10px, 
-        #bb980a 10px, 
-        #bb980a 20px);
+        #cfa500 2.5vw, 
+        #bb980a 2.5vw, 
+        #bb980a 5.13vw);
     display: flex;
     align-items: center;
-    border: 1px solid #ccc;
-    margin: -10vw 5vw 20vw 5vw;
+    border: 0.25vw solid #ccc;
+    margin: 0 5vw 20vw 5vw;
     padding: 3vw 0;
     gap: 5vw;
     justify-content: center;
   }
 
   #volver img {
-    width: 40px;
+    width: 10.25vw;
   }
 
   #volver a {
@@ -418,6 +438,15 @@ nav a {
     #foot {
       background-color: #1b1d21;
       width: 100%;
+      font-size: 4vw;
+    }
+
+    #foot h2 {
+      color: white;
+      font-size: 5vw;
+      font-weight: bold;
+      text-align: center;
+      padding: 2vw 0;
     }
 
     .footItem {
@@ -433,6 +462,6 @@ nav a {
     }
 
     .footItem img {
-      width: 40px;
+      width: 10vw;
     }
 
