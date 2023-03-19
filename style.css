@@ -44,10 +44,11 @@ nav a {
 }
 
 
-/*------------------KEYWORDS------------------*/
+/*
+------------------KEYWORDS------------------
 
 #keywords {
-  background-color: #fef3c7; /*#fef3c7*/
+  background-color: #fef3c7;
 }
 
 #keywords h2 {
@@ -68,35 +69,20 @@ nav a {
 #keywords .cuadrado span{
   text-decoration: underline;
 }
+*/
 
 
 /*------------------INFO EXTRA------------------*/
 
-.extraInfo {
-  margin: 15vw 0 17vw 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.extraInfo h3 {
+#extraInfo {
+  margin: 15vw auto 17vw auto;
   width: 85vw;
-  margin: 0 5vw;
-
-  font-family: 'Rampart One';
-  font-size: 8vw;
-  letter-spacing: 1vw;
-
-  text-align: center;
+  text-align: left;
   border: 2.5vw solid transparent;
-  margin: 5vw 0;
 
   background-image:
   linear-gradient(white, white),
-  linear-gradient(180deg, #6978d7, #ff8838 50%, #6978d7);
-  /*(180deg, cornflowerblue, #ff8838 50%, cornflowerblue)*/
-  /*#606dbc #465298*/
+  linear-gradient(180deg, #a8e1d5, #ffe7b2 50%, #a8e1d5);
 
   background-repeat: no-repeat;
   background-size: 100% 100%, 100% 200%;
@@ -111,6 +97,23 @@ nav a {
   }
 }
 
+#extraInfo h2 {
+  font-family: 'Rampart One';
+  font-size: 8vw;
+  letter-spacing: 1vw;
+  line-height: 9vw;
+  background: url(assets/list-style.png) no-repeat left top 2.5vw;
+  background-size: 5vw;
+  padding-left: 7vw;
+}
+
+#extraInfo ul {
+  list-style: none;
+}
+
+#extraInfo li {
+  margin: 7vw 2vw;
+}
 
 /*------------------OFERTA------------------*/
 
@@ -261,16 +264,12 @@ nav a {
  }
 
 
- /*------------------PARTYGIF------------------*/
+ /*------------------VIDEO------------------*/
 
- .partydiv {
+ #myVideo {
   display: flex;
+  align-items: center;
   justify-content: center;
- }
-
- .partygif {
-  width: 90vw;
-
  }
 
 
@@ -280,6 +279,7 @@ nav a {
     margin: 20vw 5vw 0vw 5vw;
     background-color: #ffd52b;
     border: 2.5vw solid #1b1d21;
+    padding: 3vw 0 0 0;
   }
 
 
@@ -301,7 +301,7 @@ nav a {
     height: 0.5vw;
     width: 83vw;
     background-color: black;
-    margin: 0.8vw 0;
+    margin: 1vw 0;
   }
 
   .reservaT2 {
@@ -310,8 +310,8 @@ nav a {
   }
 
   #reservaBoton {
-    margin: 5vw 15vw;
-    padding: 2vw;
+    margin: 7vw 15vw;
+    padding: 3vw 0;
     border-radius: 10vw;
     display: flex;
     align-items: center;
@@ -407,10 +407,10 @@ nav a {
   #volver {
     background: repeating-linear-gradient(
         90deg, 
-        #cfa500, 
-        #cfa500 2.5vw, 
-        #bb980a 2.5vw, 
-        #bb980a 5.13vw);
+        #a8e1d5, 
+        #a8e1d5 2.5vw, 
+        #88cbbd 2.5vw, 
+        #88cbbd 5.13vw);
     display: flex;
     align-items: center;
     border: 0.25vw solid #ccc;
