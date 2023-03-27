@@ -6,8 +6,8 @@
 
 html,
 body {
-  width: 100vw;
-  height: 100vw;
+  width: initial;
+  height: initial;
   scroll-behavior: smooth;
 }
 
@@ -25,7 +25,6 @@ header img {
 nav {
   display: flex;
   background-color: #1b1d21;
-  justify-content: space-around;
   padding: 2.7vw 0;
 }
 
@@ -34,7 +33,6 @@ nav div {
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
 }
 
 nav a {
@@ -81,8 +79,8 @@ nav a {
   border: 2.5vw solid transparent;
 
   background-image:
-  linear-gradient(white, white),
-  linear-gradient(180deg, #a8e1d5, #ffe7b2 50%, #a8e1d5);
+    linear-gradient(white, white),
+    linear-gradient(180deg, #a8e1d5, #ffe7b2 50%, #a8e1d5);
 
   background-repeat: no-repeat;
   background-size: 100% 100%, 100% 200%;
@@ -115,9 +113,9 @@ nav a {
   margin: 7vw 2vw;
 }
 
+
+
 /*------------------OFERTA------------------*/
-
-
 
 .box {
   margin: 0 auto;
@@ -128,16 +126,17 @@ nav a {
   box-shadow: 0 0 2vw;
 }
 
-
-
 .ribbon {
   position: absolute;
-  right: -1.282vw; top: -1.282vw;
+  right: -1.282vw;
+  top: -1.282vw;
   z-index: 1;
   overflow: hidden;
-  width: 19.231vw; height: 19.231vw;
+  width: 19.231vw;
+  height: 19.231vw;
   text-align: right;
 }
+
 .ribbon span {
   font-size: 2.564vw;
   font-weight: bold;
@@ -153,29 +152,33 @@ nav a {
   background: linear-gradient(#3498DB 0%, #2980B9 100%);
   box-shadow: 0 0.769vw 2.564vw -1.282vw rgba(0, 0, 0, 1);
   position: absolute;
-  top: 4.872vw; right: -5.385vw;
+  top: 4.872vw;
+  right: -5.385vw;
 }
+
 .ribbon span::before {
   content: "";
-  position: absolute; left: 0vw; top: 100%;
+  position: absolute;
+  left: 0vw;
+  top: 100%;
   z-index: -1;
   border-left: 0.769vw solid #2980B9;
   border-right: 0.769vw solid transparent;
   border-bottom: 0.769vw solid transparent;
   border-top: 0.769vw solid #2980B9;
 }
+
 .ribbon span::after {
   content: "";
-  position: absolute; right: 0vw; top: 100%;
+  position: absolute;
+  right: 0vw;
+  top: 100%;
   z-index: -1;
   border-left: 0.769vw solid transparent;
   border-right: 0.769vw solid #2980B9;
   border-bottom: 0.769vw solid transparent;
   border-top: 0.769vw solid #2980B9;
 }
-
-
-
 
 .textoOferta {
   display: flex;
@@ -210,204 +213,689 @@ nav a {
 }
 
 
- /*------------------VIDEO------------------*/
+/*------------------CONTACTA------------------*/
 
- #myVideo {
+#reservaBlock {
+  margin: 20vw 5vw 0vw 5vw;
+  background-color: #ffd52b;
+  border: 2.5vw solid #1b1d21;
+  padding: 3vw 0 0 0;
+}
+
+
+.reservaTitulo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.reservaT1 {
+  -webkit-text-stroke: 0.5vw rgb(0, 0, 0);
+  font-size: 10vw;
+  font-weight: bold;
+  color: red;
+}
+
+.reservaRaya {
+  height: 0.5vw;
+  width: 83vw;
+  background-color: black;
+  margin: 1vw 0;
+}
+
+.reservaT2 {
+  font-size: 3.5vw;
+  font-weight: bold;
+}
+
+#reservaBoton {
+  margin: 7vw 15vw;
+  padding: 3vw 0;
+  border-radius: 10vw;
   display: flex;
   align-items: center;
   justify-content: center;
- }
+  gap: 10px;
+  background-color: #34B7F1;
+  /*#64acdc*/
+  text-decoration: none;
+  color: black;
+}
+
+#reservaBoton img {
+  width: 7vw;
+}
+
+#reservaBoton p {
+  font-size: 4vw;
+}
+
+#empresas {
+  --mask: conic-gradient(from -45deg at bottom, #0000, #000 1deg 89deg, #0000 90deg) 50%/8.00vw 100%;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
+  background-color: #ffd52bbc;
+  margin: 0 auto;
+  margin-bottom: 20vw;
+  width: 90vw;
+}
+
+#empresasDiv {
+  padding: 2vw 0 4vw 0;
+  font-size: 4vw;
+  text-align: center;
+}
+
+.empresasEsp {
+  margin: 5vw 0;
+}
 
 
- /*------------------CONTACTA------------------*/
+/*------------------VIDEO------------------*/
 
-  #reservaBlock {
-    margin: 20vw 5vw 0vw 5vw;
-    background-color: #ffd52b;
-    border: 2.5vw solid #1b1d21;
-    padding: 3vw 0 0 0;
+#myVideo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#myVideo video {
+  width: 90vw;
+}
+
+
+/*------------------PREGUNTAS FRECUENTES------------------*/
+
+#faq {
+  margin: 20vw auto 0 auto;
+  text-align: center;
+  font-size: 3.8vw;
+  background-color: #4ec9bf;
+  width: 90vw;
+  border: dashed 0.78vw #2b2b2b;
+  border-bottom: solid 0.78vw #000000;
+  padding: 2vw 0;
+}
+
+#chat {
+  margin: 0 auto 20vw auto;
+
+  border: dashed 0.78vw #2b2b2b;
+  border-top: none;
+
+  background-color: white;
+  border-radius: 0 0 3vw 3vw;
+  width: 90vw;
+  /*box-shadow: 0 0 10px 1px #0bafa1;*/
+}
+
+.mensaje {
+  display: inline-block;
+  font-size: 4vw;
+  border-radius: 5vw;
+}
+
+.m-left {
+  background-color: #008484;
+  margin: 5vw 15vw 5vw 5vw;
+  border-bottom-left-radius: 0;
+  color: white;
+}
+
+.m-right {
+  background-color: #1a8400;
+  /*#00ac0c*/
+  margin: 5vw 5vw 5vw 15vw;
+  border-bottom-right-radius: 0;
+  color: white;
+}
+
+.mensaje p {
+  padding: 3vw 5vw;
+}
+
+
+/*------------------VOLVER A RESERVA------------------*/
+
+#volver {
+  background: repeating-linear-gradient(90deg,
+      #a8e1d5,
+      #a8e1d5 2.5vw,
+      #88cbbd 2.5vw,
+      #88cbbd 5.13vw);
+  display: flex;
+  align-items: center;
+  border: 0.25vw solid #ccc;
+  margin: 0 5vw 20vw 5vw;
+  padding: 3vw 0;
+  gap: 5vw;
+  justify-content: center;
+}
+
+#volver img {
+  width: 10.25vw;
+}
+
+#volver a {
+  color: black;
+  text-decoration: none;
+  font-size: 5vw;
+  font-weight: bold;
+}
+
+
+
+/*------------------FOOT------------------*/
+
+#foot {
+  background-color: #1b1d21;
+  width: 100%;
+  font-size: 4vw;
+}
+
+#foot h2 {
+  color: white;
+  font-size: 5vw;
+  font-weight: bold;
+  text-align: center;
+  padding: 2vw 0;
+}
+
+.footItem {
+  padding: 3vw 5vw;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footItem a {
+  text-decoration: none;
+  color: white;
+}
+
+.footItem img {
+  width: 10vw;
+}
+
+
+/*----------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------*/
+/*----------------------------VERSION DE ESCRITORIO---------------------------*/
+/*----------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------*/
+
+@media screen and (orientation: landscape) {
+
+  html,
+  body {
+    scroll-snap-type: y mandatory;
   }
 
+  body {
+    background-color: #eeeeee;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .slide {
+    scroll-snap-align: start;
+
+    display: flex;
+    width: 96%;
+    height: 100vh;
+
+    padding: 0 2%;
+  }
+
+  .mitad {
+    height: 100%;
+  }
+
+  .slide1 {
+    /*background: linear-gradient(0deg, rgba(255, 250, 90, 1) 0%, rgba(255, 255, 240, 1) 10%);*/
+    height: 90vh;
+  }
+
+  .slide1 .left {
+    width: 30%;
+  }
+
+  .slide1 .right {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .slide2 {
+    flex-direction: row-reverse;
+    height: 80vh;
+  }
+
+  .slide2 .left {
+    width: 40%;
+  }
+
+  .slide2 .right {
+    width: 60%;
+  }
+
+  nav {
+    display: none;
+  }
+
+  #volver {
+    display: none;
+  }
+
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+    margin: 0 auto;
+  }
+
+  header h1,
+  header a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  header img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+
+  /*--------------------------------------------------------------*/
+  /*--------------------------INFO EXTRA--------------------------*/
+  /*--------------------------------------------------------------*/
+
+  #extraInfo {
+    height: 40%;
+    margin: 0 auto;
+    width: 90%;
+    text-align: left;
+    border: 1vw solid transparent;
+
+    background-image:
+      linear-gradient(white, white),
+      linear-gradient(180deg, #a8e1d5, #ffe7b2 50%, #a8e1d5);
+
+    background-repeat: no-repeat;
+    background-size: 100% 100%, 100% 200%;
+    background-position: 0 0, 0 100%;
+    background-origin: padding-box, border-box;
+    animation: KF 1s infinite alternate;
+  }
+
+  @keyframes KF {
+    100% {
+      background-position: 0 0, 0 0;
+    }
+  }
+
+  #extraInfo h2 {
+    font-family: 'Rampart One';
+    font-size: 2vw;
+    letter-spacing: initial;
+    line-height: initial;
+    background: url(assets/list-style.png) no-repeat left top 15%;
+    background-size: 2.5vw;
+    padding-left: 10%;
+  }
+
+  #extraInfo ul {
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  #extraInfo li {
+    margin: 0;
+    width: 100%;
+  }
+
+
+
+  /*--------------------------------------------------------------*/
+  /*----------------------------PRECIOS---------------------------*/
+  /*--------------------------------------------------------------*/
+
+  #bloquePrecio {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 5% 0;
+  }
+
+  #cubosPrecio {
+    padding: 1vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 95%;
+  }
+
+  .box {
+    margin: 0;
+    padding: 1vw;
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background: #fff;
+    box-shadow: 0 0 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .box2 {
+    width: 40%;
+  }
+
+
+  .ribbon {
+    display: none;
+  }
+
+  .textoOferta {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0;
+    font-size: 1.7vw;
+  }
+
+  .textoOferta p {
+    font-family: 'Galindo';
+    color: black;
+    font-size: inherit;
+  }
+
+  .textoOferta .p2 {
+    font-size: inherit;
+  }
+
+  .asteriscoPrecios {
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  .asteriscoPrecios p {
+    font-family: 'Galindo';
+    font-size: 2vw;
+    text-align: center;
+  }
+
+  .box2 {
+    margin-top: 0;
+    padding: 0;
+  }
+
+
+
+  /*--------------------------------------------------------------*/
+  /*---------------------------CONTACTA---------------------------*/
+  /*--------------------------------------------------------------*/
+
+  #bloqueReserva {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #reservaBlock {
+    width: 85%;
+    height: 90%;
+    margin: 0;
+    background-color: #ffd52b;
+    border: 1.4vw solid #1b1d21;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
 
   .reservaTitulo {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
   }
 
   .reservaT1 {
-    -webkit-text-stroke: 0.5vw rgb(0, 0, 0);
-    font-size: 10vw;
+    -webkit-text-stroke: 0.3vw rgb(0, 0, 0);
+    font-size: 4.3vw;
     font-weight: bold;
     color: red;
   }
-  
+
   .reservaRaya {
     height: 0.5vw;
-    width: 83vw;
+    width: 85%;
     background-color: black;
-    margin: 1vw 0;
+    margin: 0;
   }
 
   .reservaT2 {
-    font-size: 3.5vw;
+    font-size: 1.7vw;
     font-weight: bold;
   }
 
   #reservaBoton {
-    margin: 7vw 15vw;
-    padding: 3vw 0;
+    margin: 2% 20%;
+    padding: 1% 0;
     border-radius: 10vw;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
-    background-color: #34B7F1; /*#64acdc*/
+    gap: 0;
+    background-color: #34B7F1;
+    /*#64acdc*/
     text-decoration: none;
     color: black;
   }
 
   #reservaBoton img {
-    width: 7vw;
+    width: 5%;
   }
 
   #reservaBoton p {
-    font-size: 4vw;
+    font-size: 2.1vw;
   }
 
   #empresas {
-    --mask: conic-gradient(from -45deg at bottom,#0000,#000 1deg 89deg,#0000 90deg) 50%/8.00vw 100%;
+    --mask: conic-gradient(from -45deg at bottom, #0000, #000 1deg 89deg, #0000 90deg) 50%/3.00vw 100%;
     -webkit-mask: var(--mask);
     mask: var(--mask);
     background-color: #ffd52bbc;
     margin: 0 auto;
-    margin-bottom: 20vw;
-    width: 90vw;
+    margin-bottom: 0;
+    width: 85%;
+    height: 20%;
+    padding-bottom: 2vw;
   }
 
-  #empresas div {
-    padding: 2vw 0 4vw 0;
-    font-size: 4vw;
+  #empresasDiv {
+    padding: 0;
+    font-size: 2em;
     text-align: center;
+  }
+
+  #empresasDiv p {
+    display: inline-block;
+    font-size: 1.8vw;
   }
 
   .empresasEsp {
-    margin: 5vw 0;
+    margin: 0;
+    display: block;
   }
 
 
-  /*------------------PREGUNTAS FRECUENTES------------------*/
+  /*--------------------------------------------------------------*/
+  /*------------------------------FAQ-----------------------------*/
+  /*--------------------------------------------------------------*/
 
   #faq {
-    margin: 20vw auto 0 auto;
-    text-align: center;
-    font-size: 3.8vw;
+    margin: 5% auto 0 auto;
     background-color: #4ec9bf;
-    width: 90vw;
-    border: dashed 0.78vw #2b2b2b;
-    border-bottom: solid 0.78vw #000000;
-    padding: 2vw 0;
+    width: 90%;
+    border: dashed 0.4vw #2b2b2b;
+    border-bottom: solid 5px #000000;
+    
+    padding: initial;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6em;
   }
 
   #chat {
-    margin: 0 auto 20vw auto;
-    border: 0.25vw solid #ccc;
+    margin: 0 auto 5% auto;
 
-    border: dashed 0.78vw #2b2b2b;
+    border: dashed 0.4vw #2b2b2b;
     border-top: none;
 
     background-color: white;
     border-radius: 0 0 3vw 3vw;
-    width: 90vw;
+    width: 90%;
     /*box-shadow: 0 0 10px 1px #0bafa1;*/
+
+    height: 80%;
+
+    overflow: scroll;
+
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
   }
 
   .mensaje {
+    scroll-snap-align: start;
+
     display: inline-block;
-    font-size: 4vw;
+    font-size: 2em;
     border-radius: 5vw;
   }
 
   .m-left {
     background-color: #008484;
-    margin: 5vw 15vw 5vw 5vw;
+    margin: 3% 15% 3% 5%;
     border-bottom-left-radius: 0;
     color: white;
   }
 
   .m-right {
-    background-color: #1a8400; /*#00ac0c*/
-    margin: 5vw 5vw 5vw 15vw;
+    background-color: #1a8400;
+    /*#00ac0c*/
+    margin: 3% 5% 3% 15%;
     border-bottom-right-radius: 0;
     color: white;
   }
 
   .mensaje p {
-    padding: 3vw 5vw;
+    padding: 20px;
   }
 
 
-  /*------------------VOLVER A RESERVA------------------*/
 
-  #volver {
-    background: repeating-linear-gradient(
-        90deg, 
-        #a8e1d5, 
-        #a8e1d5 2.5vw, 
-        #88cbbd 2.5vw, 
-        #88cbbd 5.13vw);
+  /*--------------------------------------------------------------*/
+  /*-----------------------------VIDEO----------------------------*/
+  /*--------------------------------------------------------------*/
+
+  #myVideo {
     display: flex;
     align-items: center;
-    border: 0.25vw solid #ccc;
-    margin: 0 5vw 20vw 5vw;
-    padding: 3vw 0;
-    gap: 5vw;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  #myVideo video {
+    width: initial;
+    max-height: 85%;
+    max-width: 85%;
+    object-fit: contain;
+  }
+
+
+  /*--------------------------------------------------------------*/
+  /*-----------------------------FOOT-----------------------------*/
+  /*--------------------------------------------------------------*/
+
+  #foot {
+    background-color: #1b1d21;
+    width: 100%;
+    font-size: 2em;
+    height: 20vh;
+  }
+
+  #h2Div {
+    height: 35%;
+    display: flex;
+    align-items: center;
     justify-content: center;
   }
 
-  #volver img {
-    width: 10.25vw;
-  }
-
-  #volver a {
-    color: black;
-    text-decoration: none;
-    font-size: 5vw;
+  #foot h2 {
+    color: white;
+    font-size: 3.3vw;
     font-weight: bold;
+    padding: 0;
+  }
+
+  #desktopFlex {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 65%;
+  }
+
+  .footItem {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 2.2vw;
+  }
+
+  .footItem a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .footItem img {
+    width: 30px;
   }
 
 
 
-    /*------------------FOOT------------------*/
-
-    #foot {
-      background-color: #1b1d21;
-      width: 100%;
-      font-size: 4vw;
-    }
-
-    #foot h2 {
-      color: white;
-      font-size: 5vw;
-      font-weight: bold;
-      text-align: center;
-      padding: 2vw 0;
-    }
-
-    .footItem {
-      padding: 3vw 5vw;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-
-    .footItem a {
-      text-decoration: none;
-      color: white;
-    }
-
-    .footItem img {
-      width: 10vw;
-    }
-
+  /*--------------------------------------------------------------*/
+  /*--------------------CIERRE DEL MEDIA QUERY--------------------*/
+  /*--------------------------------------------------------------*/
+}
