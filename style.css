@@ -6,8 +6,8 @@
 
 html,
 body {
-  width: initial;
-  height: initial;
+  width: 100%;
+  height: 100%;
   scroll-behavior: smooth;
 }
 
@@ -418,6 +418,10 @@ nav a {
   width: 10vw;
 }
 
+#CONSTRUCCION {
+  display: none;
+}
+
 
 /*----------------------------------------------------------------------------*/
 /*----------------------------------------------------------------------------*/
@@ -427,62 +431,7 @@ nav a {
 
 @media screen and (orientation: landscape) {
 
-  html,
-  body {
-    scroll-snap-type: y mandatory;
-  }
-
-  body {
-    background-color: #eeeeee;
-    display: flex;
-    flex-direction: column;
-  }
-
   .slide {
-    scroll-snap-align: start;
-
-    display: flex;
-    width: 96%;
-    height: 100vh;
-
-    padding: 0 2%;
-  }
-
-  .mitad {
-    height: 100%;
-  }
-
-  .slide1 {
-    /*background: linear-gradient(0deg, rgba(255, 250, 90, 1) 0%, rgba(255, 255, 240, 1) 10%);*/
-    height: 90vh;
-  }
-
-  .slide1 .left {
-    width: 30%;
-  }
-
-  .slide1 .right {
-    width: 70%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: column;
-  }
-
-  .slide2 {
-    flex-direction: row-reverse;
-    height: 80vh;
-  }
-
-  .slide2 .left {
-    width: 40%;
-  }
-
-  .slide2 .right {
-    width: 60%;
-  }
-
-  nav {
     display: none;
   }
 
@@ -490,407 +439,83 @@ nav a {
     display: none;
   }
 
-  header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 50%;
-    margin: 0 auto;
-  }
-
-  header h1,
-  header a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-  }
-
-  header img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-  }
-
-
-  /*--------------------------------------------------------------*/
-  /*--------------------------INFO EXTRA--------------------------*/
-  /*--------------------------------------------------------------*/
-
-  #extraInfo {
-    height: 40%;
-    margin: 0 auto;
-    width: 90%;
-    text-align: left;
-    border: 1vw solid transparent;
-
-    background-image:
-      linear-gradient(white, white),
-      linear-gradient(180deg, #a8e1d5, #ffe7b2 50%, #a8e1d5);
-
-    background-repeat: no-repeat;
-    background-size: 100% 100%, 100% 200%;
-    background-position: 0 0, 0 100%;
-    background-origin: padding-box, border-box;
-    animation: KF 1s infinite alternate;
-  }
-
-  @keyframes KF {
-    100% {
-      background-position: 0 0, 0 0;
-    }
-  }
-
-  #extraInfo h2 {
-    font-family: 'Rampart One';
-    font-size: 2vw;
-    letter-spacing: initial;
-    line-height: initial;
-    background: url(assets/list-style.png) no-repeat left top 15%;
-    background-size: 2.5vw;
-    padding-left: 10%;
-  }
-
-  #extraInfo ul {
-    list-style: none;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-  }
-
-  #extraInfo li {
-    margin: 0;
-    width: 100%;
-  }
-
-
-
-  /*--------------------------------------------------------------*/
-  /*----------------------------PRECIOS---------------------------*/
-  /*--------------------------------------------------------------*/
-
-  #bloquePrecio {
-    width: 100%;
-    height: 30%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    margin: 5% 0;
-  }
-
-  #cubosPrecio {
-    padding: 1vw;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    width: 95%;
-  }
-
-  .box {
-    margin: 0;
-    padding: 1vw;
-    position: relative;
-    width: 50%;
-    height: 100%;
-    background: #fff;
-    box-shadow: 0 0 2%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-  }
-
-  .box2 {
-    width: 40%;
-  }
-
-
-  .ribbon {
+  #foot {
     display: none;
   }
 
-  .textoOferta {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    gap: 0;
-    font-size: 1.7vw;
-  }
-
-  .textoOferta p {
-    font-family: 'Galindo';
-    color: black;
-    font-size: inherit;
-  }
-
-  .textoOferta .p2 {
-    font-size: inherit;
-  }
-
-  .asteriscoPrecios {
-    margin: 0 auto;
-    width: 90%;
-  }
-
-  .asteriscoPrecios p {
-    font-family: 'Galindo';
-    font-size: 2vw;
-    text-align: center;
-  }
-
-  .box2 {
-    margin-top: 0;
-    padding: 0;
-  }
-
-
-
-  /*--------------------------------------------------------------*/
-  /*---------------------------CONTACTA---------------------------*/
-  /*--------------------------------------------------------------*/
-
-  #bloqueReserva {
-    width: 100%;
-    height: 60%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  #reservaBlock {
-    width: 85%;
-    height: 90%;
-    margin: 0;
-    background-color: #ffd52b;
-    border: 1.4vw solid #1b1d21;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-  }
-
-  .reservaTitulo {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  }
-
-  .reservaT1 {
-    -webkit-text-stroke: 0.3vw rgb(0, 0, 0);
-    font-size: 4.3vw;
-    font-weight: bold;
-    color: red;
-  }
-
-  .reservaRaya {
-    height: 0.5vw;
-    width: 85%;
-    background-color: black;
-    margin: 0;
-  }
-
-  .reservaT2 {
-    font-size: 1.7vw;
-    font-weight: bold;
-  }
-
-  #reservaBoton {
-    margin: 2% 20%;
-    padding: 1% 0;
-    border-radius: 10vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0;
-    background-color: #34B7F1;
-    /*#64acdc*/
-    text-decoration: none;
-    color: black;
-  }
-
-  #reservaBoton img {
-    width: 5%;
-  }
-
-  #reservaBoton p {
-    font-size: 2.1vw;
-  }
-
-  #empresas {
-    --mask: conic-gradient(from -45deg at bottom, #0000, #000 1deg 89deg, #0000 90deg) 50%/3.00vw 100%;
-    -webkit-mask: var(--mask);
-    mask: var(--mask);
-    background-color: #ffd52bbc;
-    margin: 0 auto;
-    margin-bottom: 0;
-    width: 85%;
-    height: 20%;
-    padding-bottom: 2vw;
-  }
-
-  #empresasDiv {
-    padding: 0;
-    font-size: 2em;
-    text-align: center;
-  }
-
-  #empresasDiv p {
-    display: inline-block;
-    font-size: 1.8vw;
-  }
-
-  .empresasEsp {
-    margin: 0;
+  #CONSTRUCCION {
     display: block;
-  }
-
-
-  /*--------------------------------------------------------------*/
-  /*------------------------------FAQ-----------------------------*/
-  /*--------------------------------------------------------------*/
-
-  #faq {
-    margin: 5% auto 0 auto;
-    background-color: #4ec9bf;
-    width: 90%;
-    border: dashed 0.4vw #2b2b2b;
-    border-bottom: solid 5px #000000;
-    
-    padding: initial;
-    height: 10%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.6em;
-  }
-
-  #chat {
-    margin: 0 auto 5% auto;
-
-    border: dashed 0.4vw #2b2b2b;
-    border-top: none;
-
-    background-color: white;
-    border-radius: 0 0 3vw 3vw;
-    width: 90%;
-    /*box-shadow: 0 0 10px 1px #0bafa1;*/
-
-    height: 80%;
-
-    overflow: scroll;
-
-    scroll-behavior: smooth;
-    scroll-snap-type: y mandatory;
-  }
-
-  .mensaje {
-    scroll-snap-align: start;
-
-    display: inline-block;
-    font-size: 2em;
-    border-radius: 5vw;
-  }
-
-  .m-left {
-    background-color: #008484;
-    margin: 3% 15% 3% 5%;
-    border-bottom-left-radius: 0;
-    color: white;
-  }
-
-  .m-right {
-    background-color: #1a8400;
-    /*#00ac0c*/
-    margin: 3% 5% 3% 15%;
-    border-bottom-right-radius: 0;
-    color: white;
-  }
-
-  .mensaje p {
-    padding: 20px;
-  }
-
-
-
-  /*--------------------------------------------------------------*/
-  /*-----------------------------VIDEO----------------------------*/
-  /*--------------------------------------------------------------*/
-
-  #myVideo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
     height: 100%;
   }
 
-  #myVideo video {
-    width: initial;
-    max-height: 85%;
-    max-width: 85%;
-    object-fit: contain;
-  }
-
-
-  /*--------------------------------------------------------------*/
-  /*-----------------------------FOOT-----------------------------*/
-  /*--------------------------------------------------------------*/
-
-  #foot {
-    background-color: #1b1d21;
-    width: 100%;
-    font-size: 2em;
-    height: 20vh;
-  }
-
-  #h2Div {
-    height: 35%;
+  #titulo {
+    background-color: #55e5ef;
+    height: 20%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-  }
-
-  #foot h2 {
-    color: white;
-    font-size: 3.3vw;
+    text-align: center;
+    font-size: 4.5vw;
     font-weight: bold;
-    padding: 0;
   }
 
-  #desktopFlex {
+  .sub {
+    font-size: 3vw;
+  }
+
+  #CONSTRUCCION p {
+    font-size: 4;
+  }
+
+  #mantenimiento {
+    height: 60%;
+    background-image: url(assets/logoConstruccion.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+
+  #contacto {
+    height: 20%;
+    text-align: center;
+    background-color: #1b1d21;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  #contacto p {
+    font-size: 2.5vw;
+    color: white;
+  }
+
+  #iconos {
+    margin: 0 10%;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    height: 65%;
+    width: 100%;
   }
 
-  .footItem {
-    padding: 0;
+  .icono {
     display: flex;
     align-items: center;
-    gap: 10px;
-    font-size: 2.2vw;
+    justify-content: center;
+    margin: 0;
   }
 
-  .footItem a {
+
+  .icono img {
+    object-fit: contain;
+  }
+
+  .icono a {
+    margin: 0 25px;
     text-decoration: none;
     color: white;
-  }
-
-  .footItem img {
-    width: 30px;
+    font-size: 2vw;
   }
 
 
