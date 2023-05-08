@@ -24,15 +24,29 @@ header img {
 
 nav {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
   background-color: #1b1d21;
-  padding: 2.7vw 0;
+}
+
+#separador {
+  width: 90vw;
+  height: 0.5px;
+  background-color: rgb(201, 201, 201);
 }
 
 nav div {
-  width: 33.33vw;
+  width: 33vw;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 2vw 0;
+}
+
+.middle {
+  border-left: 1px solid rgb(201, 201, 201);
+  border-right: 1px solid rgb(201, 201, 201);
 }
 
 nav a {
@@ -111,6 +125,91 @@ nav a {
 
 #extraInfo li {
   margin: 7vw 2vw;
+}
+
+/*------------------TEMATICA------------------*/
+
+#tematica {
+  border: 5px solid #9fd8f1;
+  border-style:outset;
+  width: 90vw;
+  margin : 0 auto 22vw auto;
+}
+
+#tematica h2 {
+  font-size: 8vw;
+  text-align: center;
+  margin: 5vw 0;
+  -webkit-text-stroke: 0.5vw rgb(0, 0, 0);
+  color: white;
+}
+
+#tematica div {
+  border: 1px solid #9c9c9c;
+  width: 60vw;
+  margin: 5vw 0 5vw 10vw;
+  padding: 4vw;
+  border-radius: 10px;
+}
+
+#robo {
+  background-image: url(assets/elRobo.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  height: 20vw;
+  display: flex;
+  align-items: center;
+}
+
+#robo:hover {
+  background: linear-gradient(rgba(250,250,250, 0.6),
+rgba(250,250,250, 0.6)), url('assets/elRobo.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#personalizada {
+  background-image: url(assets/personalizada.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  height: 15vw;
+}
+
+#personalizada:hover {
+  background: linear-gradient(rgba(250,250,250, 0.6),
+  rgba(250,250,250, 0.6)), url('assets/personalizada.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#tematica .nameTematica {
+  font-size: 5vw;
+  font-weight: bold;
+  -webkit-text-stroke: 0.3vw rgb(0, 0, 0);
+  color: white;
+}
+
+#tematica .desc {
+  display: none;
+  font-size: 3vw;
+  color: black;
+  font-weight: bold;
+}
+
+#tematica div:hover .desc {
+  display: initial;
+  opacity: 1;
+}
+
+#tematica div:hover .nameTematica {
+  display: none;
 }
 
 
@@ -194,8 +293,12 @@ nav a {
   font-size: 5vw;
 }
 
+.textoOferta .p1 {
+  font-size: 8vw;
+}
+
 .textoOferta .p2 {
-  font-size: 5vw;
+  font-size: 3vw;
 }
 
 .asteriscoPrecios {
