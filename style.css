@@ -140,8 +140,7 @@ nav a {
   font-size: 8vw;
   text-align: center;
   margin: 5vw 0;
-  -webkit-text-stroke: 0.5vw rgb(0, 0, 0);
-  color: white;
+  
 }
 
 #tematica div {
@@ -397,14 +396,74 @@ rgba(250,250,250, 0.6)), url('assets/elRobo.png');
 
 /*------------------VIDEO------------------*/
 
-#myVideo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+  grid-column-start: 1;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  align-content: start;
+  max-width: 90vw;
+  margin: 0 auto;
+  transition: all 150ms linear;
 }
 
-#myVideo video {
-  width: 90vw;
+.gallery input[type="radio"] {
+  display: none;
+}
+
+.gallery label {
+  position: relative;
+  display: block;
+  padding-bottom: 60%;
+  margin: 5px;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.gallery label:before {
+  border: 1px solid #e3e3e3;
+  content: "";
+  position: absolute;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  top: -5px;
+}
+
+.gallery img {
+  display: none;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  width: 100%;
+  transition: all 150ms linear;
+}
+
+.gallery video {
+  display: none;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  width: 100%;
+  transition: all 150ms linear;
+}
+
+.gallery input[name="select"]:checked + label + img {
+  display: block;
+}
+
+.gallery input[name="select"]:checked + label + video {
+  display: block;
+}
+
+.gallery input[name="select"]:checked + label:before {
+  border: 1px solid #000;
 }
 
 
