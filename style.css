@@ -11,6 +11,10 @@ body {
   scroll-behavior: smooth;
 }
 
+.slide h1, h2, p {
+  user-select: none;
+}
+
 header {
   display: flex;
   justify-content: center;
@@ -54,35 +58,6 @@ nav a {
   color: white;
   font-size: 5vw;
 }
-
-
-/*
-------------------KEYWORDS------------------
-
-#keywords {
-  background-color: #fef3c7;
-}
-
-#keywords h2 {
-  font-size: 6vw;
-  font-weight: normal;
-  letter-spacing: 1.3vw;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-#keywords .cuadrado {
-  padding: 7vw 0;
-  height: 100%;
-  text-align: center;
-  width: 95vw;
-  margin: 0 auto;
-}
-
-#keywords .cuadrado span{
-  text-decoration: underline;
-}
-*/
-
 
 /*------------------INFO EXTRA------------------*/
 
