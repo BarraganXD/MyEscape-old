@@ -34,18 +34,19 @@ nav {
   background-color: #1b1d21;
 }
 
-#separador {
-  width: 90vw;
-  height: 0.5px;
-  background-color: rgb(201, 201, 201);
-}
-
 nav div {
   width: 33vw;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 2vw 0;
+  margin: 4vw 0;
+}
+
+#separador {
+  width: 90vw;
+  height: 0.5px;
+  background-color: rgb(201, 201, 201);
+  margin: 0;
 }
 
 .middle {
@@ -139,7 +140,7 @@ nav a {
 
 #robo:hover {
   background: linear-gradient(rgba(250,250,250, 0.6),
-rgba(250,250,250, 0.6)), url('assets/elRobo.png');
+rgba(250,250,250, 0.6)), url('assets/elRoboMal.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -369,7 +370,7 @@ rgba(250,250,250, 0.6)), url('assets/elRobo.png');
 
 /*------------------VIDEO------------------*/
 
-.gallery {
+#gallery {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 20px;
@@ -380,13 +381,14 @@ rgba(250,250,250, 0.6)), url('assets/elRobo.png');
   max-width: 90vw;
   margin: 0 auto;
   transition: all 150ms linear;
+  margin-bottom: 20vw;
 }
 
-.gallery input[type="radio"] {
+#gallery input[type="radio"] {
   display: none;
 }
 
-.gallery label {
+#gallery label {
   position: relative;
   display: block;
   padding-bottom: 60%;
@@ -397,7 +399,7 @@ rgba(250,250,250, 0.6)), url('assets/elRobo.png');
   background-position: 50% 50%;
 }
 
-.gallery label:before {
+#gallery label:before {
   border: 1px solid #e3e3e3;
   content: "";
   position: absolute;
@@ -407,7 +409,7 @@ rgba(250,250,250, 0.6)), url('assets/elRobo.png');
   top: -5px;
 }
 
-.gallery img {
+#gallery img {
   display: none;
   grid-column-start: 1;
   grid-column-end: 5;
@@ -417,7 +419,7 @@ rgba(250,250,250, 0.6)), url('assets/elRobo.png');
   transition: all 150ms linear;
 }
 
-.gallery video {
+#gallery video {
   display: none;
   grid-column-start: 1;
   grid-column-end: 5;
@@ -427,16 +429,72 @@ rgba(250,250,250, 0.6)), url('assets/elRobo.png');
   transition: all 150ms linear;
 }
 
-.gallery input[name="select"]:checked + label + img {
+#gallery input[name="select"]:checked + label + img {
   display: block;
 }
 
-.gallery input[name="select"]:checked + label + video {
+#gallery input[name="select"]:checked + label + video {
   display: block;
 }
 
-.gallery input[name="select"]:checked + label:before {
+#gallery input[name="select"]:checked + label:before {
   border: 1px solid #000;
+}
+
+
+/*------------------RESENYAS------------------*/
+
+#resenyas {
+  display: flex;
+  flex-direction: row;
+  width: 90vw;
+  margin: 0 auto 20vw auto;
+}
+
+#resenyas aside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5vw;
+  width: 50%;
+}
+
+.resenya {
+  width: 95%;
+  background-color: #ffe7b2b3;
+  overflow-wrap: break-word;
+  border: 1px solid #dbdbdb;
+  border-collapse: collapse;
+}
+
+.rCaption {
+  font-size: 4vw;
+  padding: 3vw 2vw;
+  background-color: #a8e1d5c5;
+  border: 1px solid #dbdbdb;
+  font-weight: bold;
+}
+
+.rOpinion {
+  font-size: 3vw;
+  margin: 3vw 2vw
+}
+
+.rProfile {
+  display: flex;
+  flex-direction: row;
+  margin: 3vw 2vw;
+  align-items: center;
+  gap: 5%;
+}
+
+.rProfile img {
+  width: 30%;
+}
+
+.rProfile .rAutor {
+  font-size: 3vw;
+  width: 70%;
 }
 
 
