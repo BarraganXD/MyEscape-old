@@ -30,6 +30,7 @@ header img {
   display: flex;
   justify-content: center;
   gap: 4vw;
+  margin-bottom: 5vw;
 }
 
 #age a {
